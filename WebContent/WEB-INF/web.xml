@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+
+
+	<servlet>
+		<servlet-name>HomeController</servlet-name>
+		<servlet-class>com.lkdnlog.controller.HomeController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>HomeController</servlet-name>
+		<url-pattern>/Home</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>HomeController</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>HomeController</servlet-name>
+		<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UserRegistryController</servlet-name>
+		<servlet-class>com.lkdnlog.controller.UserRegistryController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserRegistryController</servlet-name>
+		<url-pattern>/UserRegistry</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>PostCreatController</servlet-name>
+		<servlet-class>com.lkdnlog.controller.PostCreatController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PostCreatController</servlet-name>
+		<url-pattern>/PostCreat</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>DetailPostController</servlet-name>
+		<servlet-class>com.lkdnlog.controller.DetailPostController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DetailPostController</servlet-name>
+		<url-pattern>/DetailPost</url-pattern>
+	</servlet-mapping>
+
+	<context-param>
+		<description>Location to store uploaded file</description>
+		<param-name>file-upload</param-name>
+		<param-value>/img</param-value>
+	</context-param>
+
+	<welcome-file-list>
+		<welcome-file>Home</welcome-file>
+	</welcome-file-list>
+
+
+</web-app>
